@@ -1,0 +1,179 @@
+<!-- We can create an entire HTML skeleton by typing ! and hitting enter -->
+
+<!DOCTYPE html> <!-- DOCTYPE Declaration (not considered an element) declares what TYPE of document this is-->
+
+<html lang="en"> <!-- "root tag" The first element in our HTML file. Our webpage is defined within this element-->
+
+<!--The head is typically metadata. <title> is the name of the tab when your render this HTML page-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello HTML CSS</title>
+
+    <style>
+        /* We could have defined CSS here, but we won't */
+    </style>
+
+    <!--This is how we can link external CSS to HTML files!-->
+    <!--"href" is just the style sheet we want to apply-->
+    <link rel="stylesheet" href="HelloHTMLCSS.css">
+
+</head>
+
+<!--The body contains all of the actual content of your webpage. Our elements!-->
+<body>
+    
+    <!-- h1 through h6 are "headers". h1 is the biggest -->
+    <h1 id="header"> Hello HTML! We are officially front end devs </h1>
+
+    <h6> I am a smol header </h6>
+
+    <!--<p> is a paragraph. generic line of text-->
+    <p>I just built a new webpage!</p> <p>Paragraphs are BLOCK elements</p>
+    <p>Block elements take up an entire BLOCK of the webpage</p>
+
+    <!--Line break: Creates an empty line of space-->
+    <br> <!--By the way, notice this is a "self closing" tag-->
+
+    <!--<span> is an inline element. can exist on the same line as other inline elements-->
+    <span>I am a span!</span> <span>We are INLINE elements!</span>
+
+    <!--<div> is your general DIVision element. We usually group elements together inside divs-->
+    <div style="color:green">
+        <p>I am a paragraph in a div styled with inline styling!</p>
+        <h3>I am an h3 in a div styled with inline styling!</h3>
+    </div>
+
+    <!----------------------------------------------(Lists)-->
+
+    <h3>Our Favorite Movies: </h3>
+
+    <!--Ordered List! Lists items in 1, 2, 3... format-->
+    <ol class="list">
+        <li>Holy Grail</li>
+        <li>Silence of the Lambs</li>
+        <li>Captain Phillips</li>
+        <li>Nine</li>
+        <li>Gladiator</li>
+    </ol>
+
+    <h4>Honorable Mentions:</h4>
+
+    <!--Unordered List! Lists items in bullet format-->
+    <ul class="list">
+        <li>Last Airbender</li>
+        <li>Lost in Translation</li>
+        <li>Saving Private Ryan</li>
+        <li>Stalker</li>
+        <li>Land Before Time</li>    
+    </ul>
+
+    <!------------------------------------------(Tables)-->
+
+    <h3>Our Favorite Pokemon</h3>
+
+    <!-- Tables are great for displaying data -->
+
+    <table>
+
+        <thead> <!--This defines the table's header row-->
+            <tr> <!--<tr> defines a Table Row-->
+                <th>PokeName</th>
+                <th>PokeType</th>
+                <th>TrainerName</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Piplup</td>
+                <td>Water</td>
+                <td>Oscar</td>
+            </tr>
+            <tr>
+                <td>Bulbasaur</td>
+                <td>Grass</td>
+                <td>Gyague</td>
+            </tr>
+            <tr>
+                <td>Spheal</td>
+                <td>Water/Ice</td>
+                <td>Kaden</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br><br><br>
+
+    <!----------------------------Input Elements-->
+
+    <p>Enter your username: </p>
+    <input type="text" placeholder="John Doe">
+
+    <p>Enter your password: </p>
+    <input type="password">
+
+    <p>Enter your age: </p>
+    <input type="number">
+
+    <!--Radio Buttons only let you choose one option at once-->
+
+    <h4>Choose an Option:</h4>
+
+    <div>
+
+        <div>
+            <input type="radio" name="radioGroup" id="radio1">
+            <label for="radio1">Option A</label>
+        </div>
+
+        <div>
+            <input type="radio" name="radioGroup" id="radio2">
+            <label for="radio2">Option B</label>
+        </div>
+
+    </div>
+
+    <!--Checkboxes let you choose multiple options-->
+
+    <h4>How are you?</h4>
+
+    <div>
+
+        <div>
+            <input type="checkbox" name="checkGroup" id="check1">
+            <label for="check1">Sad</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="checkGroup" id="check2">
+            <label for="check2">Happy</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="checkGroup" id="check3">
+            <label for="check3">Indifferent</label>
+        </div>
+
+    </div>
+
+    <br>
+
+    <!--Select elements are basically dropdowns-->
+    <select name="Colors" id="colorDropdown">
+        <option value="" disabled selected>Choose a Color:</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Orange">Orange</option>
+        <option value="Black">Black</option>
+        <option value="Purple">Purple</option>
+    </select>
+
+    <br><br>
+
+    <button>Hello I don't do anything but you can click me</button>
+
+</body>
+
+</html>
