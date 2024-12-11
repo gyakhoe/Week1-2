@@ -1,21 +1,24 @@
 /*Every <p> will get this styling (element selector)*/
 p {
     text-align: center;
-    color:blue;
+    color: blue;
 }
 
 /*Every element with an id of "header" will get this styling (id selector)NOTE: ids should be unique (technically don't have to be, but should be)*/
 #header {
-    border: solid 3px pink; /*border is a visible border*/
+    border: solid 3px pink;
+    /*border is a visible border*/
     border-radius: 25px;
-    padding: 100px; /*padding is the space between the content and border*/
-} 
+    padding: 100px;
+    /*padding is the space between the content and border*/
+}
 
 /*Every element with a class of "list" will get this styling (class selector)*/
 .list {
-    margin:100px; /*Margin makes space between an element and its neighbors*/
+    margin: 100px;
+    /*Margin makes space between an element and its neighbors*/
     background-color: chartreuse;
-    font-family:cursive;
+    font-family: cursive;
     font-weight: bolder;
     font-style: italic;
     font-size: xx-large;
@@ -25,5 +28,12 @@ p {
 /*Every single element will get this style (Universal Selector)*/
 * {
     background-color: darkolivegreen;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#radioContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 40px;
 }

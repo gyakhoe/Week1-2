@@ -5,6 +5,7 @@
 <html lang="en"> <!-- "root tag" The first element in our HTML file. Our webpage is defined within this element-->
 
 <!--The head is typically metadata. <title> is the name of the tab when your render this HTML page-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,18 +19,24 @@
     <!--"href" is just the style sheet we want to apply-->
     <link rel="stylesheet" href="HelloHTMLCSS.css">
 
+    <!-- This is BOOTSTRAP CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <!--The body contains all of the actual content of your webpage. Our elements!-->
+
 <body>
-    
+
     <!-- h1 through h6 are "headers". h1 is the biggest -->
     <h1 id="header"> Hello HTML! We are officially front end devs </h1>
 
     <h6> I am a smol header </h6>
 
     <!--<p> is a paragraph. generic line of text-->
-    <p>I just built a new webpage!</p> <p>Paragraphs are BLOCK elements</p>
+    <p>I just built a new webpage!</p>
+    <p>Paragraphs are BLOCK elements</p>
     <p>Block elements take up an entire BLOCK of the webpage</p>
 
     <!--Line break: Creates an empty line of space-->
@@ -65,7 +72,7 @@
         <li>Lost in Translation</li>
         <li>Saving Private Ryan</li>
         <li>Stalker</li>
-        <li>Land Before Time</li>    
+        <li>Land Before Time</li>
     </ul>
 
     <!------------------------------------------(Tables)-->
@@ -74,7 +81,7 @@
 
     <!-- Tables are great for displaying data -->
 
-    <table>
+    <table class="table table-dark table-striped">
 
         <thead> <!--This defines the table's header row-->
             <tr> <!--<tr> defines a Table Row-->
@@ -139,7 +146,7 @@
 
     <h4>How are you?</h4>
 
-    <div>
+    <div id="radioContainer">
 
         <div>
             <input type="checkbox" name="checkGroup" id="check1">
@@ -172,7 +179,7 @@
 
     <br><br>
 
-    <button>Hello I don't do anything but you can click me</button>
+    <button class="btn btn-success">Hello I don't do anything but you can click me</button>
 
 </body>
 
