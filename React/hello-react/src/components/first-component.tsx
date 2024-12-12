@@ -12,10 +12,11 @@ export const FirstComponent: React.FC = () => {
 
     // We can define variables and logic in the space above the  returned view
     const message: String = "I am a valued stored in First Component, and rendered to TSX";
+    // Notice the data binding message in the view.
     return (
         <>
             <h3>This is our first component</h3>
-            <p>{message}</p>
+            <p>Data Binding: {message}</p>
         </>
     );
 }

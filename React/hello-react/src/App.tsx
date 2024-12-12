@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import { FirstComponent } from './components/first-component'
+import { ParentComponent } from './components/parent-component'
 
 // The app.tsx is the root of our app ( at least when it comes ot rendering views on the page)
 // Most of the code we write will go elsewhere int hte src folder, but the app.tsx controls what gets rendered
@@ -25,6 +26,7 @@ function App() {
         * */}
 
       <FirstComponent />
+      <ParentComponent />
 
     </>
   )
