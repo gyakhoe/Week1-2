@@ -18,7 +18,7 @@ function Calculation() {
         } else {
             setSideB(Number(event.target.value));
         }
-        setResult("");
+        setResult(0);
     }
 
     //Function to do the calculation and store it in the result state variable

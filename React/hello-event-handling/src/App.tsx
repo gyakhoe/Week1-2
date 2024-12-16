@@ -3,6 +3,7 @@
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Calculation from './calculation/calculation'
+import CharacterContainer from './components-component/character-container';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/calc" element={<Calculation />} />
+          <Route path="/char" element={<CharacterContainer />} />
         </Routes>
       </BrowserRouter>
 
